@@ -1,0 +1,100 @@
+extends components/layout
+
+block content
+  main.main
+
+    .main__header
+      h1.title1 All Customers
+      p.subtitle Active Members
+      form.search(id="search")
+        button.search__btn
+          svg.search__svg
+            use(href="./images/sprite.svg#search")
+        input.search__input(type="search" placeholder="Search")
+
+    table.table
+      thead
+        tr.table__tr
+          th.table__th Customer Name
+          th.table__th Company
+          th.table__th Phone Number
+          th.table__th Email
+          th.table__th Country
+          th.table__th Status
+      tbody
+        tr.table__tr
+          td.table__td Jane Cooper
+          td.table__td Microsoft
+          td.table__td (225) 555-0118
+          td.table__td jane<wbr>@microsoft.com
+          td.table__td United States
+          td.table__td
+            span.table__active Active
+        tr.table__tr
+          td.table__td Floyd Miles
+          td.table__td Yahoo
+          td.table__td (205) 555-0100
+          td.table__td floyd<wbr>@yahoo.com
+          td.table__td Kiribati
+          td.table__td
+            span.table__inactive Inactive
+        tr.table__tr
+          td.table__td Ronald Richards
+          td.table__td Adobe
+          td.table__td (302) 555-0107
+          td.table__td ronald<wbr>@adobe.com
+          td.table__td Israel
+          td.table__td
+            span.table__inactive Inactive
+        tr.table__tr
+          td.table__td Marvin McKinney
+          td.table__td Tesla
+          td.table__td (252) 555-0126
+          td.table__td marvin<wbr>@tesla.com
+          td.table__td Iran
+          td.table__td
+            span.table__active Active
+        tr.table__tr
+          td.table__td Jerome Bell
+          td.table__td Google
+          td.table__td (629) 555-0129
+          td.table__td jerome<wbr>@google.com
+          td.table__td Réunion
+          td.table__td
+            span.table__active Active
+        tr.table__tr
+          td.table__td Kathryn Murphy
+          td.table__td Microsoft
+          td.table__td (406) 555-0120
+          td.table__td kathryn<wbr>@microsoft.com
+          td.table__td Curaçao
+          td.table__td
+            span.table__active Active
+        tr.table__tr
+          td.table__td Jacob Jones
+          td.table__td Yahoo
+          td.table__td (208) 555-0112
+          td.table__td jacob<wbr>@yahoo.com
+          td.table__td Brazil
+          td.table__td
+            span.table__active Active
+        tr.table__tr
+          td.table__td Kristin Watson
+          td.table__td Facebook
+          td.table__td (704) 555-0127
+          td.table__td kristin<wbr>@facebook.com
+          td.table__td Åland Islands
+          td.table__td
+            span.table__inactive Inactive
+
+    .main__footer
+      p.footer__p Showing data 1 to 8 of  256K entries
+      .pagination
+        a.pagination__link.pagination__inactive(href="#") &lt;
+        span.pagination__link.pagination__active 1
+        a.pagination__link(href="#") 2
+        a.pagination__link(href="#") 3
+        a.pagination__link(href="#") 4
+        span.pagination__span ...
+        a.pagination__link(href="#") 40
+        a.pagination__link(href="#") &gt;

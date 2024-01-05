@@ -1,0 +1,126 @@
+// ---------- aside ----------
+.aside {
+  width: 306px;
+  min-height: 100vh;
+  padding: 36px 28px 76px;
+  background: $white;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include screen-1280 {
+    width: 66px;
+    padding: 36px 10px 76px;
+  }
+}
+
+// ---------- title ----------
+.title {
+  margin-bottom: 65px;
+  display: flex;
+  &__svg {
+    width: 37px;
+    height: 37px;
+    margin-right: 8px;
+    @include screen-1280 {
+      margin: 0 4px;
+    }
+  }
+  &__h2 {
+    margin-right: 4px;
+    @include font(26px, 600, normal, 0.26px);
+  }
+  &__span {
+    color: $gray07;
+    @include font(10px, 500, 50px, -0.1px);
+  }
+}
+
+// ---------- nav ----------
+.nav {
+  width: 100%;
+  &__link {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 16px;
+    padding: 11px 8px 11px 11px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all .3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include screen-1280 {
+      padding: 12px;
+    }
+  }
+  &__icon1 {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    fill: $gray06;
+    transition: all .3s;
+    @include screen-1280 {
+      margin-right: 0;
+    }
+  }
+  &__icon2 {
+    @extend .nav__icon1;
+    stroke: $gray06;
+  }
+  &__span {
+    color: $gray06;
+    @include font(14px, 500, normal, -0.14px);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    transition: all .3s;
+  }
+  &__arrow {
+    margin-left: auto;
+    stroke: $gray06;
+    transition: all .3s;
+  }
+  &__active,
+  &__link:hover {
+    background-color: $blue;
+    .nav__icon1 {
+      fill: $white;
+    }
+    .nav__icon2,
+    .nav__arrow {
+      stroke: $white;
+    }
+    .nav__span {
+      color: $white;
+    }
+  }
+}
+
+// ---------- user. ----------
+.user {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 42px auto;
+  gap: 0 12px;
+  &__img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    grid-area: 1 / 1 / 3 / 2;
+    @include screen-1280 {
+      margin-left: 2px;
+    }
+  }
+  &__name {
+    @include font(14px, 500, normal, 0.14px);
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  &__profession {
+    color: $gray09;
+    @include font(12px, 400, normal, 0.12px);
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}

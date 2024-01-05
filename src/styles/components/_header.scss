@@ -1,0 +1,11 @@
+// ---------- header ----------
+.header {
+  height: 128px;
+  padding-top: 41px;
+  &__hello {
+    @include font(24px, 500, normal);
+    @include screen-1024 {
+      font-size: 20px;
+    }
+  }
+}

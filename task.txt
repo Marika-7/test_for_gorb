@@ -1,0 +1,32 @@
+-------------------- task --------------------
+
+-------------------- git --------------------
+
+  git init
+  git add .
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/Marika-7/test_for_gorb.git
+  git push -u origin main
+
+-------------------- npm --------------------
+
+      npm install -g gulp-cli
+  npm init
+
+  npm i -D gulp
+  npm i -D gulp-pug
+  npm i -D sass gulp-sass gulp-autoprefixer@8.0.0
+    npm i -D gulp-babel @babel/core @babel/preset-env
+    npm i -D gulp-concat gulp-uglify
+  npm i -D browser-sync gulp-clean
+  npm i -D gulp-svg-sprite
+  npm i -D gulp-imagemin@7.1.0
+  npm i -D gulp-newer gulp-webp@4.0.1
+    npm i -D gulp-fonter gulp-ttf2woff2
+
+
+  gulp
+  gulp sprite
+  gulp images
+  gulp fonts

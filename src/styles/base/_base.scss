@@ -1,0 +1,24 @@
+// ---------- body -----------
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $black;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  &__main {
+    padding: 0 95px 60px 71px;
+    background-color: $gray01;
+    @include screen-1280 {
+      padding: 0 40px 40px;
+    }
+  }
+}
+
+.hide {
+  @include screen-1280 {
+    display: none;
+  }
+}

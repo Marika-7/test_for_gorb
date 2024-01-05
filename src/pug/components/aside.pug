@@ -1,0 +1,55 @@
+aside.aside
+
+  .title
+    svg.title__svg
+      use(href="./images/sprite.svg#setting")
+    h2.title__h2.hide Dashboard
+    span.title__span.hide v.01
+
+  nav.nav
+    ul
+      li
+        a.nav__link(href="#")
+          svg.nav__icon2
+            use(href="./images/sprite.svg#key-square")
+          span.nav__span.hide Dashboard
+      li
+        a.nav__link(href="#")
+          svg.nav__icon1
+            use(href="./images/sprite.svg#3d-square")
+          span.nav__span.hide Product
+          svg.nav__arrow.hide
+            use(href="./images/sprite.svg#chevron-right")
+      li
+        a.nav__link.nav__active(href="#")
+          svg.nav__icon1.nav__icon2
+            use(href="./images/sprite.svg#user-square")
+          span.nav__span.hide Customers
+          svg.nav__arrow.hide
+            use(href="./images/sprite.svg#chevron-right")
+      li
+        a.nav__link(href="#")
+          svg.nav__icon2
+            use(href="./images/sprite.svg#wallet-money")
+          span.nav__span.hide Income
+          svg.nav__arrow.hide
+            use(href="./images/sprite.svg#chevron-right")
+      li
+        a.nav__link(href="#")
+          svg.nav__icon1
+            use(href="./images/sprite.svg#discount-shape")
+          span.nav__span.hide Promote
+          svg.nav__arrow.hide
+            use(href="./images/sprite.svg#chevron-right")
+      li
+        a.nav__link(href="#")
+          svg.nav__icon1
+            use(href="./images/sprite.svg#message-question")
+          span.nav__span.hide Help
+          svg.nav__arrow.hide
+            use(href="./images/sprite.svg#chevron-right")
+
+  .user
+    img.user__img(src="./images/user1.webp", alt="User's photo")
+    p.user__name.hide Evano
+    p.user__profession.hide Project Manager

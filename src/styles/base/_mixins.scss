@@ -1,0 +1,59 @@
+// 320 / 480 / 640 / 768 / 1024 / 1280 / 1440 / 1600 / 1920
+
+// desktop
+// @mixin screen-1600 {
+//   @media screen and (max-width: 1600px) {
+//     @content;
+//   }
+// }
+
+// @mixin screen-1440 {
+//   @media screen and (max-width: 1440px) {
+//     @content;
+//   }
+// }
+
+@mixin screen-1280 {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+// tablet
+@mixin screen-1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen-768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// mobile
+// @mixin screen-640 {
+//   @media screen and (max-width: 640px) {
+//     @content;
+//   }
+// }
+
+// @mixin screen-480 {
+//   @media screen and (max-width: 480px) {
+//     @content;
+//   }
+// }
+
+// @mixin screen-360 {
+//   @media screen and (max-width: 360) {
+//     @content;
+//   }
+// }
+
+@mixin font($s, $w, $lh, $ls: normal) {
+  font-size: $s;
+  font-weight: $w;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
